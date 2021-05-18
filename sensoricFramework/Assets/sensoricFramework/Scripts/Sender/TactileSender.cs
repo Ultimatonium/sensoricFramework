@@ -4,7 +4,9 @@ namespace SensoricFramework
 {
     /// <summary>
     /// when collider got hit sends <see cref="PlayTactileEventArgs"/> to <see cref="SensoricManager"/>
+    /// requires BoxCollider
     /// </summary>
+    [RequireComponent(typeof(BoxCollider))]
     public class TactileSender : SensoricSender
     {
         /// <summary>

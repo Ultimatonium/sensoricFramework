@@ -5,8 +5,9 @@ namespace SensoricFramework
 {
     /// <summary>
     /// abstract base class for all sensoric sender
+    /// requires Collider
     /// </summary>
-    [RequireComponent(typeof(BoxCollider))]
+    [RequireComponent(typeof(Collider))]
     public abstract class SensoricSender : MonoBehaviour
     {
         /// <summary>
