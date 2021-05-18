@@ -1,3 +1,3 @@
 # sensoricFramework
 
-![class diagram](/sensoricFramework/sensoricFramework/Assets/sensoricFramework/sensoricFramework.png)
+![class diagram](/sensoricFramework/Assets/sensoricFramework/sensoricFramework.png)
