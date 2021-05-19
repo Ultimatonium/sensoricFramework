@@ -6,7 +6,6 @@ namespace SensoricFramework
     /// when collider got hit sends <see cref="PlayTactileEventArgs"/> to <see cref="SensoricManager"/>
     /// requires BoxCollider
     /// </summary>
-    [RequireComponent(typeof(BoxCollider))]
     public class TactileSender : SensoricSender
     {
         /// <summary>
@@ -21,6 +20,19 @@ namespace SensoricFramework
         /// </summary>
         [SerializeField]
         protected bool addCollisionPoint;
+
+        /// <summary>
+        /// Unity-Message
+        /// Verifies that on the GameObject or on it's childs a BoxCollider exists
+        /// </summary>
+        private void OnValidate()
+        {
+            Collider collider = GetComponentInChildren<BoxCollider>();
+            if (collider == null)
+            {
+                Debug.LogWarning("missing collider");
+            }
+        }
 
         /// <summary>
         /// Creates <see cref="PlayTactileEventArgs"/> for <see cref="SensoricManager"/>

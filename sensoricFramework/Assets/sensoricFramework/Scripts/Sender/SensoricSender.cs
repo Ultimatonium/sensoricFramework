@@ -7,7 +7,6 @@ namespace SensoricFramework
     /// abstract base class for all sensoric sender
     /// requires Collider
     /// </summary>
-    [RequireComponent(typeof(Collider))]
     public abstract class SensoricSender : MonoBehaviour
     {
         /// <summary>
@@ -53,6 +52,19 @@ namespace SensoricFramework
             else
             {
                 Debug.LogError("Ray not hit");
+            }
+        }
+
+        /// <summary>
+        /// Unity-Message
+        /// Verifies that on the GameObject or on it's childs an Collider exists
+        /// </summary>
+        private void OnValidate()
+        {
+            Collider collider = GetComponentInChildren<Collider>();
+            if (collider == null)
+            {
+                Debug.LogWarning("missing collider");
             }
         }
 

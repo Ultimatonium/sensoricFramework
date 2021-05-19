@@ -5,7 +5,6 @@ namespace SensoricFramework
     /// <summary>
     /// defines human body position which can receive an sensoric event
     /// </summary>
-    [RequireComponent(typeof(Collider))]
     public class SensoricReceiver : MonoBehaviour
     {
         /// <summary>
@@ -20,5 +19,18 @@ namespace SensoricFramework
         /// </summary>
         [SerializeField]
         public SensoricEnum[] sensorics = new SensoricEnum[] { SensoricEnum.tactile, SensoricEnum.thermal, SensoricEnum.olfactory };
+
+        /// <summary>
+        /// Unity-Message
+        /// Verifies that on the GameObject or on it's childs an Collider exists
+        /// </summary>
+        private void OnValidate()
+        {
+            Collider collider = GetComponentInChildren<Collider>();
+            if (collider == null)
+            {
+                Debug.LogWarning("missing collider");
+            }
+        }
     }
 }
