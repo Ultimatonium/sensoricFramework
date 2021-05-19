@@ -13,7 +13,7 @@ namespace SensoricFramework
         /// Holds a clip created by bHaptics Designer
         /// </summary>
         [SerializeField]
-        protected FileHapticClip bHapticClip;
+        public FileHapticClip bHapticClip;
 
         /// <summary>
         /// Creates <see cref="BHapticsEventArgs"/> for <see cref="SensoricManager"/>

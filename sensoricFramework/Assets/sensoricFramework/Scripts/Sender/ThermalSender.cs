@@ -12,7 +12,7 @@ namespace SensoricFramework
         /// struct which holds all thermal information
         /// </summary>
         [SerializeField]
-        protected ThermalStruct thermalStruct;
+        public ThermalStruct thermalStruct;
 
         /// <summary>
         /// Creates <see cref="PlayThermalEventArgs"/> for <see cref="SensoricManager"/>

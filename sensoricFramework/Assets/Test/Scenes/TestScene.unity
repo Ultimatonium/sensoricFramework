@@ -140,6 +140,7 @@ GameObject:
   - component: {fileID: 105711859}
   - component: {fileID: 105711861}
   - component: {fileID: 105711862}
+  - component: {fileID: 105711863}
   m_Layer: 0
   m_Name: sensoricSender
   m_TagString: Untagged
@@ -163,6 +164,7 @@ MonoBehaviour:
     sensoric: 0
     intensity: 0.258
     duration: 2
+    executionAmount: 0
   thermalStruct:
     thermal: 2
 --- !u!135 &105711855
@@ -257,6 +259,7 @@ MonoBehaviour:
     sensoric: 0
     intensity: 0.697
     duration: 1
+    executionAmount: 0
   olfactoryStruct:
     smell: 3
 --- !u!114 &105711860
@@ -275,6 +278,7 @@ MonoBehaviour:
     sensoric: 0
     intensity: 0
     duration: 0
+    executionAmount: 0
   tactileStruct:
     positions: []
   addCollisionPoint: 0
@@ -294,6 +298,7 @@ MonoBehaviour:
     sensoric: 0
     intensity: 0
     duration: 0
+    executionAmount: 0
   olfactoryStruct:
     smell: 0
   light:
@@ -329,6 +334,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &105711863
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 105711853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5399718b98f3f734d830afa8c5fe505e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &382723419
 GameObject:
   m_ObjectHideFlags: 0

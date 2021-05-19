@@ -27,5 +27,11 @@ namespace SensoricFramework
         /// </summary>
         [SerializeField]
         public float duration;
+        /// <summary>
+        /// <c>[SerializeField]</c>
+        /// defines how often executed
+        /// </summary>
+        [SerializeField]
+        public ExecutionAmountEnum executionAmount;
     }
 }

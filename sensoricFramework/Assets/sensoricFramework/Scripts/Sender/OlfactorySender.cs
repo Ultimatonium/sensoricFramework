@@ -12,7 +12,7 @@ namespace SensoricFramework
         /// struct which holds all ofcatory information
         /// </summary>
         [SerializeField]
-        protected OlfactoryStruct olfactoryStruct;
+        public OlfactoryStruct olfactoryStruct;
 
         /// <summary>
         /// Creates <see cref="PlayOlfactoryEventArgs"/> for <see cref="SensoricManager"/>

@@ -13,13 +13,13 @@ namespace SensoricFramework
         /// struct which holds all tactile information
         /// </summary>
         [SerializeField]
-        protected TactileStruct tactileStruct;
+        public TactileStruct tactileStruct;
         /// <summary>
         /// <c>[SerializeField]</c>
         /// bool which tells if an collision point as to be added to the <see cref="tactileStruct"/>
         /// </summary>
         [SerializeField]
-        protected bool addCollisionPoint;
+        public bool addCollisionPoint;
 
         /// <summary>
         /// Unity-Message

@@ -12,13 +12,13 @@ namespace SensoricFramework
         /// defines what the cilia light color should be set to
         /// </summary>
         [SerializeField]
-        protected Neopixel[] light = new Neopixel[CiliaDevice.ciliaSlots];
+        public Neopixel[] light = new Neopixel[CiliaDevice.ciliaSlots];
         /// <summary>
         /// <c>[SerializeField]</c>
         /// defines if <see cref="light"/> has to be applied
         /// </summary>
         [SerializeField]
-        protected bool[] setLight = new bool[CiliaDevice.ciliaSlots];
+        public bool[] setLight = new bool[CiliaDevice.ciliaSlots];
 
         /// <summary>
         /// Validates if <see cref="light"/> and <see cref="setLight"/> still has the size of <see cref="ciliaSlots"/> as it's an <c>[SerializeField]</c> and could be changed in inspector
