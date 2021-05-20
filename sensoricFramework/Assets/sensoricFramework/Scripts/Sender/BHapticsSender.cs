@@ -19,7 +19,7 @@ namespace SensoricFramework
         /// Creates <see cref="BHapticsEventArgs"/> for <see cref="SensoricManager"/>
         /// </summary>
         /// <param name="position">defines which body party got hit</param>
-        /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
+        /// <param name="collisionPoint"><see cref="Vector3"/>worldspace position where the Collider got hit</param>
         protected override void Play(PositionEnum position, Vector3 collisionPoint)
         {
             AddCollisionPoint(collisionPoint);

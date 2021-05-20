@@ -16,12 +16,15 @@ namespace SensoricFramework
         [SerializeField]
         public SensoricStruct sensoricStruct;
 
+        protected readonly static Vector3 invalidVector3 = new Vector3(float.MinValue, float.MinValue, float.MinValue);
+
         /// <summary>
         /// Unity-Message
         /// gets called to initialize the sensoric type by calling <see cref="SetSensoricType"/>
         /// </summary>
         private void Awake()
         {
+            sensoricStruct.id = System.Guid.NewGuid().ToString();
             sensoricStruct.sensoric = SetSensoricType();
         }
 
@@ -57,7 +60,7 @@ namespace SensoricFramework
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
             float intensityBackup = sensoricStruct.intensity;
             sensoricStruct.intensity = 0;
-            CollisionHandler(collision.gameObject, collision.GetContact(0).point);
+            CollisionHandler(collision.gameObject, invalidVector3);
             sensoricStruct.intensity = intensityBackup;
         }
 
@@ -93,7 +96,7 @@ namespace SensoricFramework
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
             float intensityBackup = sensoricStruct.intensity;
             sensoricStruct.intensity = 0;
-            CollisionHandler(other.gameObject, GetCollisionPointByRaycast(other));
+            CollisionHandler(other.gameObject, invalidVector3);
             sensoricStruct.intensity = intensityBackup;
         }
 
@@ -118,22 +121,23 @@ namespace SensoricFramework
         /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
         protected void CollisionHandler(GameObject gameObject, Vector3 collisionPoint)
         {
-            SensoricReceiver sensoricReceiver = gameObject.GetComponent<SensoricReceiver>();
+            SensoricReceiver[] sensoricReceivers = gameObject.GetComponents<SensoricReceiver>();
             SensoricSenderModifier[] sensoricSenderModifier = GetComponents<SensoricSenderModifier>();
-            for (int i = 0; i < sensoricSenderModifier.Length; i++)
+            for (int i = 0; i < sensoricReceivers.Length; i++)
             {
-                sensoricSenderModifier[i]?.Modify(this, sensoricReceiver);
-            }
-            if (sensoricReceiver != null)
-            {
-                if (sensoricReceiver.sensorics.Contains(sensoricStruct.sensoric))
+                for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
                 {
-                    Play(sensoricReceiver.position, collisionPoint);
+                    sensoricSenderModifier[ii]?.Modify(this, sensoricReceivers[i]);
                 }
-            }
-            for (int i = 0; i < sensoricSenderModifier.Length; i++)
-            {
-                sensoricSenderModifier[i]?.Reset(this, sensoricReceiver);
+
+                if (sensoricReceivers[i].sensorics.Contains(sensoricStruct.sensoric))
+                {
+                    Play(sensoricReceivers[i].position, collisionPoint);
+                }
+                for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
+                {
+                    sensoricSenderModifier[ii]?.Reset(this, sensoricReceivers[i]);
+                }
             }
         }
 
@@ -158,16 +162,16 @@ namespace SensoricFramework
         private Vector3 GetCollisionPointByRaycast(Collider other)
         {
             RaycastHit hit;
-            Vector3 direction = other.gameObject.transform.position - transform.position;
+            Collider currentCollider = GetComponent<Collider>();
+            Vector3 direction = transform.position - other.gameObject.transform.position;
             Ray ray = new Ray(other.gameObject.transform.position, direction);
-            if (other.Raycast(ray, out hit, direction.sqrMagnitude))
+            if (currentCollider.Raycast(ray, out hit, direction.sqrMagnitude))
             {
                 return hit.point;
             }
             else
             {
-                Debug.LogError("Ray not hit");
-                return Vector3.zero;
+                return invalidVector3;
             }
         }
     }

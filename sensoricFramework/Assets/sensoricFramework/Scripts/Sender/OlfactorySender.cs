@@ -18,7 +18,7 @@ namespace SensoricFramework
         /// Creates <see cref="PlayOlfactoryEventArgs"/> for <see cref="SensoricManager"/>
         /// </summary>
         /// <param name="position">defines which body party got hit</param>
-        /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
+        /// <param name="collisionPoint"><see cref="Vector3"/>not used</param>
         protected override void Play(PositionEnum position, Vector3 collisionPoint)
         {
             SensoricManager.Instance.OnPlayOlfactory(this, new PlayOlfactoryEventArgs { position = position, sensoric = sensoricStruct, olfactory = olfactoryStruct });

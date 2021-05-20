@@ -10,6 +10,11 @@ namespace SensoricFramework
     public struct SensoricStruct
     {
         /// <summary>
+        /// id which is unique per sender.
+        /// needed for bHaptics
+        /// </summary>
+        public string id;
+        /// <summary>
         /// defines the sensoric type
         /// </summary>
         [HideInInspector]

@@ -61,6 +61,7 @@ namespace SensoricFramework
         protected void AddCollisionPoint(Vector3 collisionPoint)
         {
             if (!addCollisionPoint) return;
+            if (collisionPoint == invalidVector3) return;
             BoxCollider boxCollider = GetComponent<BoxCollider>();
             Vector3 worldO = transform.position + boxCollider.center;
             Vector3 worldX = collisionPoint;

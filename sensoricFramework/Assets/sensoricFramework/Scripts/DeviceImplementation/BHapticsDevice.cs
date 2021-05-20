@@ -101,11 +101,11 @@ namespace SensoricFramework
             {
                 case PositionEnum.LeftHand:
                     SetGloveIntensity(dotIntensity);
-                    BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.HandL, glovePoint, durationMillis);
+                    BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.HandL, glovePoint, durationMillis);
                     break;
                 case PositionEnum.RightHand:
                     SetGloveIntensity(dotIntensity);
-                    BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.HandL, glovePoint, durationMillis);
+                    BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.HandL, glovePoint, durationMillis);
                     break;
                 default:
                     Debug.LogWarning(e.position + " is not implemented");
@@ -140,31 +140,31 @@ namespace SensoricFramework
                 switch (e.position)
                 {
                     case PositionEnum.Head:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.Head, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.Head, dots, durationMillis);
                         break;
                     case PositionEnum.LeftArm:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.ForearmL, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.ForearmL, dots, durationMillis);
                         break;
                     case PositionEnum.RightArm:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.ForearmR, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.ForearmR, dots, durationMillis);
                         break;
                     case PositionEnum.LeftHand:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.HandL, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.HandL, dots, durationMillis);
                         break;
                     case PositionEnum.RightHand:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.HandR, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id.ToString(), PositionType.HandR, dots, durationMillis);
                         break;
                     case PositionEnum.LeftFoot:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.FootL, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id.ToString(), PositionType.FootL, dots, durationMillis);
                         break;
                     case PositionEnum.RightFoot:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.FootR, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.FootR, dots, durationMillis);
                         break;
                     case PositionEnum.ChestFront:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.VestFront, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.VestFront, dots, durationMillis);
                         break;
                     case PositionEnum.ChestBack:
-                        BhapticsManager.GetHaptic().Submit(System.Guid.NewGuid().ToString(), PositionType.VestBack, dots, durationMillis);
+                        BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.VestBack, dots, durationMillis);
                         break;
                     default:
                         Debug.LogWarning(e.position + " is not implemented");
