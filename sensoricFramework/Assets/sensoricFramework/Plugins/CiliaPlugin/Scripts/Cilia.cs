@@ -19,6 +19,7 @@
 *  - SerializeField changed from private to public
 *  - mIsConnected changed to public
 *  - OnApplicationQuit changed to public
+*  - content of Start is extracted into own methode
 * !!!
 */
 
@@ -74,8 +75,13 @@ public class Cilia : MonoBehaviour
      */
     void Start()
     {
+        Initialize();
+    }
+
+    public void Initialize()
+    {
         //we are already connected so don't need setup
-        if(mIsConnected == true)
+        if (mIsConnected == true)
         {
             return;
         }
@@ -103,7 +109,7 @@ public class Cilia : MonoBehaviour
         /*Start Creating Messages for setting up library and prfiles*/
         string smellsForLibraryMessage = "[!#AddToLibrary|";
         string gameProfileMessage = "[!#LoadProfile|" + GameProfileName + "," + (int)DefaultSurroundGroup + ",";
-        if(forceCleanUpdate)
+        if (forceCleanUpdate)
         {
             gameProfileMessage = "[!#LoadProfileForce|" + GameProfileName + "," + (int)DefaultSurroundGroup + ",";
         }

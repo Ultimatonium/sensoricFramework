@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using UnityEditor;
 using UnityEngine;
 
 namespace SensoricFramework
@@ -26,15 +27,36 @@ namespace SensoricFramework
         /// </summary>
         public const int ciliaSlots = 6;
 
+        private const string ciliaTag = "Cilia";
+
         /// <summary>
         /// Unity-Message
-        /// Validates if <see cref="defaultLightColor"/> still has the size of <see cref="ciliaSlots"/> as it's an <c>[SerializeField]</c> and could be changed in inspector
+        /// Validates if <see cref="defaultLightColor"/> still has the size of <see cref="ciliaSlots"/> as it's an <c>[SerializeField]</c> and could be changed in inspector.
+        /// Validates if the tag Cilia exists.
         /// </summary>
         private void OnValidate()
         {
+            //validate light array size
             if (defaultLightColor.Length != ciliaSlots)
             {
                 Debug.LogError("defaultLightColor amount not same as ciliaSlots");
+            }
+
+            //validate Clilia tag
+            bool ciliaTagFound = false;
+            UnityEngine.Object tagManager = AssetDatabase.LoadMainAssetAtPath("ProjectSettings/TagManager.asset");
+            SerializedObject serializedTagManager = new SerializedObject(tagManager);
+            SerializedProperty serializedProperty = serializedTagManager.FindProperty("tags");
+            for (int i = 0; i < serializedProperty.arraySize; i++)
+            {
+                if (serializedProperty.GetArrayElementAtIndex(i).stringValue == ciliaTag)
+                {
+                    ciliaTagFound = true;
+                }
+            }
+            if (!ciliaTagFound)
+            {
+                Debug.LogError("missing tag: " + ciliaTag);
             }
         }
 
@@ -47,6 +69,7 @@ namespace SensoricFramework
             {
                 GameObject ciliaObject = new GameObject("Cilia");
                 ciliaObject.SetActive(false); //to set serialized fields before awake
+                ciliaObject.tag = "Cilia";
                 cilia = ciliaObject.AddComponent<Cilia>();
                 cilia.GameProfileName = Application.productName;
                 //cilia.DefaultSurroundGroup = tbd
@@ -55,6 +78,7 @@ namespace SensoricFramework
                 cilia.PathToCiliaPluginScripts = "Assets/sensoricFramework/Plugins/CiliaPlugin/Scripts/";
                 ciliaObject.SetActive(true);
                 cilia.AddSmellsList();
+                cilia.Initialize();
             }
             else
             {
@@ -172,7 +196,5 @@ namespace SensoricFramework
             yield return new WaitForSeconds(seconds);
             Cilia.setFan(surroundPosition, smell, 0);
         }
-
-        
     }
 }
