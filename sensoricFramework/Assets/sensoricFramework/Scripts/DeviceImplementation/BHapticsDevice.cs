@@ -97,6 +97,7 @@ namespace SensoricFramework
                 dotIntensity += 50;
             }
             int durationMillis = (int)(e.sensoric.duration * 1000);
+            e.sensoric.id += e.position; //fix for possible bHaptics bug
             switch (e.position)
             {
                 case PositionEnum.LeftHand:
@@ -105,7 +106,7 @@ namespace SensoricFramework
                     break;
                 case PositionEnum.RightHand:
                     SetGloveIntensity(dotIntensity);
-                    BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.HandL, glovePoint, durationMillis);
+                    BhapticsManager.GetHaptic().Submit(e.sensoric.id, PositionType.HandR, glovePoint, durationMillis);
                     break;
                 default:
                     Debug.LogWarning(e.position + " is not implemented");
@@ -137,6 +138,7 @@ namespace SensoricFramework
                     dots.Add(new PathPoint(e.tactile.positions[i].x, e.tactile.positions[i].y, (int)(e.sensoric.intensity * 100), e.tactile.positions.Length));
                 }
                 int durationMillis = (int)(e.sensoric.duration * 1000);
+                e.sensoric.id += e.position; //fix for possible bHaptics bug
                 switch (e.position)
                 {
                     case PositionEnum.Head:

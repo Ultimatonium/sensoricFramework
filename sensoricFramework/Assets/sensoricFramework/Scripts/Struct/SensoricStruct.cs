@@ -13,6 +13,7 @@ namespace SensoricFramework
         /// id which is unique per sender.
         /// needed for bHaptics
         /// </summary>
+        [HideInInspector]
         public string id;
         /// <summary>
         /// defines the sensoric type
