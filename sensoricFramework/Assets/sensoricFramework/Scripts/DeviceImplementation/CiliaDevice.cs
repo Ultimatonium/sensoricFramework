@@ -7,6 +7,7 @@ namespace SensoricFramework
 {
     /// <summary>
     /// Holds the implementation for setting up the cilia Plugin and usage.
+    /// todo: implement surround position
     /// </summary>
     public class CiliaDevice : SensoricDevice
     {
@@ -175,7 +176,7 @@ namespace SensoricFramework
                 {
                     if (ciliaE.setLight[i])
                     {
-                        Cilia.setLight(SurroundPosition.All, i, ciliaE.light[i].redValue, ciliaE.light[i].greenValue, ciliaE.light[i].blueValue);
+                        Cilia.setLight(SurroundPosition.All, i + 1, ciliaE.light[i].redValue, ciliaE.light[i].greenValue, ciliaE.light[i].blueValue);
                     }
                 }
             }

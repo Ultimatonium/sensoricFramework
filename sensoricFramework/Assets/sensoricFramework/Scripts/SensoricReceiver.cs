@@ -22,7 +22,8 @@ namespace SensoricFramework
 
         /// <summary>
         /// Unity-Message
-        /// Verifies that on the GameObject or on it's childs an Collider exists
+        /// Verifies that on the GameObject or on it's childs an Collider exists.
+        /// Verifies that on the GameObject or on it's parent an rigidbody exists.
         /// </summary>
         private void OnValidate()
         {
@@ -30,6 +31,11 @@ namespace SensoricFramework
             if (collider == null)
             {
                 Debug.LogWarning("missing collider");
+            }
+            Rigidbody rigidbody = GetComponentInParent<Rigidbody>();
+            if (rigidbody == null)
+            {
+                Debug.LogError("missing Rigidbody");
             }
         }
     }

@@ -38,8 +38,8 @@ namespace SensoricFramework
             }
             float distanceFactor = (1 - (Vector3.Distance(sensoricReceiver.gameObject.transform.position, sensoricSender.gameObject.transform.position) / maxDistanceToCenter));
             sensoricSender.sensoricStruct.intensity *= distanceFactor;
+            sensoricSender.sensoricStruct.intensity = Mathf.Clamp01(sensoricSender.sensoricStruct.intensity); //quickfix
         }
-
 
         /// <summary>
         /// reset intensity to original Values

@@ -36,7 +36,7 @@ namespace SensoricFramework
         private void OnCollisionEnter(Collision collision)
         {
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Once) return;
-            CollisionHandler(collision.gameObject, collision.GetContact(0).point);
+            CollisionHandler(collision.gameObject, collision.GetContact(0).point, collision.collider);
         }
 
         /// <summary>
@@ -47,7 +47,7 @@ namespace SensoricFramework
         private void OnCollisionStay(Collision collision)
         {
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
-            CollisionHandler(collision.gameObject, collision.GetContact(0).point);
+            CollisionHandler(collision.gameObject, collision.GetContact(0).point, collision.collider);
         }
 
         /// <summary>
@@ -60,7 +60,7 @@ namespace SensoricFramework
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
             float intensityBackup = sensoricStruct.intensity;
             sensoricStruct.intensity = 0;
-            CollisionHandler(collision.gameObject, invalidVector3);
+            CollisionHandler(collision.gameObject, invalidVector3, collision.collider);
             sensoricStruct.intensity = intensityBackup;
         }
 
@@ -72,7 +72,11 @@ namespace SensoricFramework
         private void OnTriggerEnter(Collider other)
         {
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Once) return;
-            CollisionHandler(other.gameObject, GetCollisionPointByRaycast(other));
+            Rigidbody rigidbody = other.gameObject.GetComponentInParent<Rigidbody>();
+            if (rigidbody != null)
+            {
+                CollisionHandler(rigidbody.gameObject, GetCollisionPointByRaycast(other), other);
+            }
         }
 
         /// <summary>
@@ -83,7 +87,11 @@ namespace SensoricFramework
         private void OnTriggerStay(Collider other)
         {
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
-            CollisionHandler(other.gameObject, GetCollisionPointByRaycast(other));
+            Rigidbody rigidbody = other.gameObject.GetComponentInParent<Rigidbody>();
+            if (rigidbody != null)
+            {
+                CollisionHandler(rigidbody.gameObject, GetCollisionPointByRaycast(other), other);
+            }
         }
 
         /// <summary>
@@ -96,7 +104,11 @@ namespace SensoricFramework
             if (sensoricStruct.executionAmount != ExecutionAmountEnum.Ongoing) return;
             float intensityBackup = sensoricStruct.intensity;
             sensoricStruct.intensity = 0;
-            CollisionHandler(other.gameObject, invalidVector3);
+            Rigidbody rigidbody = other.gameObject.GetComponentInParent<Rigidbody>();
+            if (rigidbody != null)
+            {
+                CollisionHandler(rigidbody.gameObject, GetCollisionPointByRaycast(other), other);
+            }
             sensoricStruct.intensity = intensityBackup;
         }
 
@@ -119,24 +131,23 @@ namespace SensoricFramework
         /// </summary>
         /// <param name="gameObject"><see cref="GameObject"/> of the other collider</param>
         /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
-        protected void CollisionHandler(GameObject gameObject, Vector3 collisionPoint)
+        protected void CollisionHandler(GameObject gameObject, Vector3 collisionPoint, Collider other)
         {
-            SensoricReceiver[] sensoricReceivers = gameObject.GetComponents<SensoricReceiver>();
+            SensoricReceiver[] sensoricReceivers = gameObject.GetComponentsInChildren<SensoricReceiver>();
             SensoricSenderModifier[] sensoricSenderModifier = GetComponents<SensoricSenderModifier>();
             for (int i = 0; i < sensoricReceivers.Length; i++)
             {
-                for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
-                {
-                    sensoricSenderModifier[ii]?.Modify(this, sensoricReceivers[i]);
-                }
-
                 if (sensoricReceivers[i].sensorics.Contains(sensoricStruct.sensoric))
                 {
-                    Play(sensoricReceivers[i].position, collisionPoint);
-                }
-                for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
-                {
-                    sensoricSenderModifier[ii]?.Reset(this, sensoricReceivers[i]);
+                    for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
+                    {
+                        sensoricSenderModifier[ii]?.Modify(this, sensoricReceivers[i]);
+                    }
+                    Play(sensoricReceivers[i].position, collisionPoint, other);
+                    for (int ii = 0; ii < sensoricSenderModifier.Length; ii++)
+                    {
+                        sensoricSenderModifier[ii]?.Reset(this, sensoricReceivers[i]);
+                    }
                 }
             }
         }
@@ -146,7 +157,7 @@ namespace SensoricFramework
         /// </summary>
         /// <param name="position">defines which body party got hit</param>
         /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
-        protected abstract void Play(PositionEnum position, Vector3 collisionPoint);
+        protected abstract void Play(PositionEnum position, Vector3 collisionPoint, Collider other);
 
         /// <summary>
         /// has to be implemented to set the sensoric type of this sender
