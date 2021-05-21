@@ -22,6 +22,9 @@ Has to be attached to each GameObject which should emit an sensoric event.
 An abstract class which implements each communication with the plugin or hardware (e.g. BHapticsDevice, CiliaDevice)
 Has to be attached to any GameObject (only once).
 
+### SensoricSenderModifier
+A GameObject with SensoricSender could have one or more SensoricSenderModifier on which the sensoric values may get changed on personal needs.
+
 ## Contains
 * [bHaptics Haptic Plugin](https://assetstore.unity.com/packages/tools/integration/bhaptics-haptic-plugin-76647) (included in the framework)
 * [CiliaUnityPlugin](https://hapticsol.com/software) (included in the framework)
