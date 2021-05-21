@@ -6,20 +6,20 @@ Drag and drop [sensoricFramework.unitypackage](/sensoricFramework.unitypackage) 
 An example can be found here: [vrTest_sensoricFramework](https://github.com/Ultimatonium/vrTest_sensoricFramework)
 
 ### SensoricManager
-Singelton Object which handels the whole communication between a trigger and the hardware.
+Singleton Object which handles the whole communication between a trigger and the hardware.
 Has to be attached to any GameObject (only once).
 
 ### SensoricReceiver
-Object which defines each "body"-part. For example the head can receive olfactory or the hand thermal events.
-Has to be attached to each GameObject which should trigger an sensoric event.
+An object which defines each "body"-part. For example, the head can receive olfactory or hand thermal events.
+Has to be attached to each GameObject which should trigger a sensoric event.
 
 ### SensoricSender
-An abstract class which is implemented into specific once (e.g. TactileSender, ThermalSender, OlfactorySender). Each of these sender emits an specific sensoric event. 
-They can even be furture specified for specific hardware featers (e.g. TactileSender->BHapticsSender or OlfactorySender->CiliaSender)
-Has to be attached to each GameObject which should emit an sensoric event.
+An abstract class that is implemented into specific ones (e.g. TactileSender, ThermalSender, OlfactorySender). Each of these senders emits a specific sensoric event. 
+They can even be future specified for specific hardware features(e.g. TactileSender->BHapticsSender or OlfactorySender->CiliaSender)
+Has to be attached to each GameObject which should emit a sensoric event.
 
 ### SensoricDevice
-An abstract class which implements each communication with the plugin or hardware (e.g. BHapticsDevice, CiliaDevice)
+An abstract class that implements each communication with the plugin or hardware (e.g. BHapticsDevice, CiliaDevice)
 Has to be attached to any GameObject (only once).
 
 ### SensoricSenderModifier
