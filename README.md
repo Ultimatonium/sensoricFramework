@@ -3,8 +3,8 @@
 
 ## Contains
 * [bHaptics Haptic Plugin](https://assetstore.unity.com/packages/tools/integration/bhaptics-haptic-plugin-76647)
-* [SteamVR Plugin](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647)
 * [CiliaUnityPlugin](https://hapticsol.com/software)
+* [SteamVR Plugin](https://assetstore.unity.com/packages/tools/integration/steamvr-plugin-32647) (for testing only)
 
 ## Supported Hardware
 * [bHaptics](https://www.bhaptics.com/)
