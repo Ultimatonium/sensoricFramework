@@ -1,10 +1,10 @@
 using UnityEngine;
 
-/// <summary>
-/// Modifies the intensity based on the distance. the nearer the higher.
-/// </summary>
 namespace SensoricFramework
 {
+    /// <summary>
+    /// Modifies the intensity based on the distance. the nearer the higher.
+    /// </summary>
     public class LinearIncreaseByDistanceModifier : SensoricSenderModifier
     {
         /// <summary>
@@ -24,7 +24,7 @@ namespace SensoricFramework
             float maxDistanceToCenter = 1;
             float maxScaleFactor = Mathf.Max(transform.lossyScale.x, transform.lossyScale.y, transform.lossyScale.z);
             Collider collider = sensoricSender.gameObject.GetComponent<Collider>();
-            switch (collider)   
+            switch (collider)
             {
                 case BoxCollider bc:
                     maxDistanceToCenter = (Mathf.Max(bc.size.x, bc.size.y, bc.size.z) / 2) * maxScaleFactor;
