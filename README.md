@@ -38,4 +38,4 @@ A GameObject with SensoricSender could have one or more SensoricSenderModifier o
 ## Documentation
 Documentation is generated with [Doxygen](https://www.doxygen.nl/index.html) and can be found in the folder [html](/html). Just open the [index.html](/html/index.html) in your cloned repository.
 
-![class diagram](/sensoricFramework/Assets/sensoricFramework/sensoricFramework.png)
+![class diagram](/sensoricFramework/Assets/sensoricFramework/sensoricFramework.jpg)
