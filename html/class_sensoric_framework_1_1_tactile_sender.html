@@ -92,9 +92,9 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:a8640abb6ffdb7777f25d41dd90e76d87"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sensoric_framework_1_1_tactile_struct.html">TactileStruct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87">tactileStruct</a></td></tr>
 <tr class="memdesc:a8640abb6ffdb7777f25d41dd90e76d87"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[SerializeField]</code> struct which holds all tactile information  <a href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87">More...</a><br /></td></tr>
 <tr class="separator:a8640abb6ffdb7777f25d41dd90e76d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba09554de2ee67ad881832c6c724d008"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#aba09554de2ee67ad881832c6c724d008">addCollisionPoint</a></td></tr>
-<tr class="memdesc:aba09554de2ee67ad881832c6c724d008"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[SerializeField]</code> bool which tells if an collision point as to be added to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>  <a href="class_sensoric_framework_1_1_tactile_sender.html#aba09554de2ee67ad881832c6c724d008">More...</a><br /></td></tr>
-<tr class="separator:aba09554de2ee67ad881832c6c724d008"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a145242c950b6ff18788854deef088284"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a145242c950b6ff18788854deef088284">replaceWithCollisionPoint</a></td></tr>
+<tr class="memdesc:a145242c950b6ff18788854deef088284"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[SerializeField]</code> bool which tells if an collision point as to be added to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>  <a href="class_sensoric_framework_1_1_tactile_sender.html#a145242c950b6ff18788854deef088284">More...</a><br /></td></tr>
+<tr class="separator:a145242c950b6ff18788854deef088284"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_attribs_class_sensoric_framework_1_1_sensoric_sender"><td colspan="2" onclick="javascript:toggleInherit('pub_attribs_class_sensoric_framework_1_1_sensoric_sender')"><img src="closed.png" alt="-"/>&#160;Public Attributes inherited from <a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html">SensoricFramework.SensoricSender</a></td></tr>
 <tr class="memitem:a26812c4fa022e7b063015e74fc3d7a18 inherit pub_attribs_class_sensoric_framework_1_1_sensoric_sender"><td class="memItemLeft" align="right" valign="top"><a class="el" href="struct_sensoric_framework_1_1_sensoric_struct.html">SensoricStruct</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html#a26812c4fa022e7b063015e74fc3d7a18">sensoricStruct</a></td></tr>
 <tr class="memdesc:a26812c4fa022e7b063015e74fc3d7a18 inherit pub_attribs_class_sensoric_framework_1_1_sensoric_sender"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[SerializeField]</code> struct which holds all general sensoric informations  <a href="class_sensoric_framework_1_1_sensoric_sender.html#a26812c4fa022e7b063015e74fc3d7a18">More...</a><br /></td></tr>
@@ -108,9 +108,12 @@ Protected Member Functions</h2></td></tr>
 <tr class="memitem:a82bda0abb6db174d2407ac5f9068d4c5"><td class="memItemLeft" align="right" valign="top">override <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5">SensoricEnum</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a82bda0abb6db174d2407ac5f9068d4c5">SetSensoricType</a> ()</td></tr>
 <tr class="memdesc:a82bda0abb6db174d2407ac5f9068d4c5"><td class="mdescLeft">&#160;</td><td class="mdescRight">set type of sensoric  <a href="class_sensoric_framework_1_1_tactile_sender.html#a82bda0abb6db174d2407ac5f9068d4c5">More...</a><br /></td></tr>
 <tr class="separator:a82bda0abb6db174d2407ac5f9068d4c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aca2b54d179b773cbff3e9f2f75e752e3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#aca2b54d179b773cbff3e9f2f75e752e3">AddCollisionPoint</a> (Vector3 collisionPoint, Collider other)</td></tr>
-<tr class="memdesc:aca2b54d179b773cbff3e9f2f75e752e3"><td class="mdescLeft">&#160;</td><td class="mdescRight">add the collisionPoint to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>.  <a href="class_sensoric_framework_1_1_tactile_sender.html#aca2b54d179b773cbff3e9f2f75e752e3">More...</a><br /></td></tr>
-<tr class="separator:aca2b54d179b773cbff3e9f2f75e752e3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a46f4b05ab130c0734c2c03317124bbdb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a46f4b05ab130c0734c2c03317124bbdb">ReplaceWithCollisionPoint</a> (Vector3 collisionPoint, Collider other)</td></tr>
+<tr class="memdesc:a46f4b05ab130c0734c2c03317124bbdb"><td class="mdescLeft">&#160;</td><td class="mdescRight">add the collisionPoint to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>.  <a href="class_sensoric_framework_1_1_tactile_sender.html#a46f4b05ab130c0734c2c03317124bbdb">More...</a><br /></td></tr>
+<tr class="separator:a46f4b05ab130c0734c2c03317124bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3622317a8124831762fa41d16238a8ba"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a3622317a8124831762fa41d16238a8ba">GetNormalizedCollisionPoint</a> (Vector3 collisionPoint, BoxCollider boxCollider)</td></tr>
+<tr class="memdesc:a3622317a8124831762fa41d16238a8ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns the normalized collision point based on the collidersize  <a href="class_sensoric_framework_1_1_tactile_sender.html#a3622317a8124831762fa41d16238a8ba">More...</a><br /></td></tr>
+<tr class="separator:a3622317a8124831762fa41d16238a8ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_methods_class_sensoric_framework_1_1_sensoric_sender"><td colspan="2" onclick="javascript:toggleInherit('pro_methods_class_sensoric_framework_1_1_sensoric_sender')"><img src="closed.png" alt="-"/>&#160;Protected Member Functions inherited from <a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html">SensoricFramework.SensoricSender</a></td></tr>
 <tr class="memitem:a62fb1f263824b0debfe2b4e1b3f620b3 inherit pro_methods_class_sensoric_framework_1_1_sensoric_sender"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html#a62fb1f263824b0debfe2b4e1b3f620b3">CollisionHandler</a> (GameObject gameObject, Vector3 collisionPoint, Collider other)</td></tr>
 <tr class="memdesc:a62fb1f263824b0debfe2b4e1b3f620b3 inherit pro_methods_class_sensoric_framework_1_1_sensoric_sender"><td class="mdescLeft">&#160;</td><td class="mdescRight">if this sender is alowed to emitt an event the <a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html#a30afdcd92182b83f047e6d81c7cb0ff1" title="Creates based of SensoricEventArgs for SensoricManager">Play</a> is called. <a class="el" href="class_sensoric_framework_1_1_sensoric_sender_modifier.html" title="can be attached to any GameObject which holds an SensoricSender. Will modify the values before callin...">SensoricSenderModifier</a> got applied if there are any  <a href="class_sensoric_framework_1_1_sensoric_sender.html#a62fb1f263824b0debfe2b4e1b3f620b3">More...</a><br /></td></tr>
@@ -125,10 +128,10 @@ Additional Inherited Members</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>when collider got hit sends <a class="el" href="class_sensoric_framework_1_1_play_tactile_event_args.html" title="Holds all information which is needed to emitt an tactile sense">PlayTactileEventArgs</a> to <a class="el" href="class_sensoric_framework_1_1_sensoric_manager.html" title="Core script of the SensoricFramework. Mandatory if framework want to be used. Can only exist once (Si...">SensoricManager</a> requires BoxCollider </p>
 
-<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00010">10</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00009">9</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="aca2b54d179b773cbff3e9f2f75e752e3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aca2b54d179b773cbff3e9f2f75e752e3">&#9670;&nbsp;</a></span>AddCollisionPoint()</h2>
+<a id="a3622317a8124831762fa41d16238a8ba"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3622317a8124831762fa41d16238a8ba">&#9670;&nbsp;</a></span>GetNormalizedCollisionPoint()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -137,7 +140,7 @@ Additional Inherited Members</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SensoricFramework.TactileSender.AddCollisionPoint </td>
+          <td class="memname">Vector2 SensoricFramework.TactileSender.GetNormalizedCollisionPoint </td>
           <td>(</td>
           <td class="paramtype">Vector3&#160;</td>
           <td class="paramname"><em>collisionPoint</em>, </td>
@@ -145,8 +148,8 @@ Additional Inherited Members</h2></td></tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">Collider&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
+          <td class="paramtype">BoxCollider&#160;</td>
+          <td class="paramname"><em>boxCollider</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -161,15 +164,19 @@ Additional Inherited Members</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>add the collisionPoint to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>. </p>
+<p>returns the normalized collision point based on the collidersize </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">collisionPoint</td><td>Vector3 worldspace position where the Collider got hit</td></tr>
+    <tr><td class="paramname">collisionPoint</td><td>worldspace position where the Collider got hit</td></tr>
+    <tr><td class="paramname">other</td><td>the collider of the other gameObject</td></tr>
+    <tr><td class="paramname">boxCollider</td><td>the boxCollider of the other gameObject</td></tr>
   </table>
   </dd>
 </dl>
+<dl class="section return"><dt>Returns</dt><dd>normalized Vector2</dd></dl>
+<p>thanks to Andreas P. Arcaro (<a href="http://apa-games.com/">http://apa-games.com/</a>) </p>
 
-<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00050">50</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00073">73</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
 
 </div>
 </div>
@@ -217,7 +224,8 @@ Additional Inherited Members</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">position</td><td>defines which body party got hit</td></tr>
-    <tr><td class="paramname">collisionPoint</td><td>Vector3 worldspace position where the Collider got hit</td></tr>
+    <tr><td class="paramname">collisionPoint</td><td>Vector3worldspace position where the Collider got hit</td></tr>
+    <tr><td class="paramname">other</td><td>the collider of the other gameObject</td></tr>
   </table>
   </dd>
 </dl>
@@ -225,6 +233,53 @@ Additional Inherited Members</h2></td></tr>
 <p>Implements <a class="el" href="class_sensoric_framework_1_1_sensoric_sender.html#a30afdcd92182b83f047e6d81c7cb0ff1">SensoricFramework.SensoricSender</a>.</p>
 
 <p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00030">30</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
+
+</div>
+</div>
+<a id="a46f4b05ab130c0734c2c03317124bbdb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a46f4b05ab130c0734c2c03317124bbdb">&#9670;&nbsp;</a></span>ReplaceWithCollisionPoint()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SensoricFramework.TactileSender.ReplaceWithCollisionPoint </td>
+          <td>(</td>
+          <td class="paramtype">Vector3&#160;</td>
+          <td class="paramname"><em>collisionPoint</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Collider&#160;</td>
+          <td class="paramname"><em>other</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>add the collisionPoint to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">collisionPoint</td><td>Vector3 worldspace position where the Collider got hit</td></tr>
+    <tr><td class="paramname">other</td><td>the collider of the other gameObject</td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00050">50</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
 
 </div>
 </div>
@@ -261,21 +316,21 @@ Additional Inherited Members</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="aba09554de2ee67ad881832c6c724d008"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aba09554de2ee67ad881832c6c724d008">&#9670;&nbsp;</a></span>addCollisionPoint</h2>
+<a id="a145242c950b6ff18788854deef088284"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a145242c950b6ff18788854deef088284">&#9670;&nbsp;</a></span>replaceWithCollisionPoint</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">bool SensoricFramework.TactileSender.addCollisionPoint</td>
+          <td class="memname">bool SensoricFramework.TactileSender.replaceWithCollisionPoint</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p><code>[SerializeField]</code> bool which tells if an collision point as to be added to the <a class="el" href="class_sensoric_framework_1_1_tactile_sender.html#a8640abb6ffdb7777f25d41dd90e76d87" title="[SerializeField] struct which holds all tactile information">tactileStruct</a> </p>
 
-<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00023">23</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00022">22</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
 
 </div>
 </div>
@@ -293,7 +348,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p><code>[SerializeField]</code> struct which holds all tactile information </p>
 
-<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00017">17</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_tactile_sender_8cs_source.html#l00016">16</a> of file <a class="el" href="_tactile_sender_8cs_source.html">TactileSender.cs</a>.</p>
 
 </div>
 </div>

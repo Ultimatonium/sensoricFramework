@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['sensoricframework_1056',['SensoricFramework',['../namespace_sensoric_framework.html',1,'']]]
+  ['sensoricframework_1059',['SensoricFramework',['../namespace_sensoric_framework.html',1,'']]]
 ];

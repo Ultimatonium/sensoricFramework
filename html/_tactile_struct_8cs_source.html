@@ -69,20 +69,21 @@ $(function() {
 <div class="title">TactileStruct.cs</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_tactile_struct_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
-<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160; </div>
-<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_sensoric_framework.html">SensoricFramework</a></div>
-<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;{</div>
-<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;    [System.Serializable]</div>
-<div class="line"><a name="l00010"></a><span class="lineno"><a class="line" href="struct_sensoric_framework_1_1_tactile_struct.html">   10</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code" href="struct_sensoric_framework_1_1_tactile_struct.html">TactileStruct</a></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    {</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;        [SerializeField]</div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="struct_sensoric_framework_1_1_tactile_struct.html#a012bc469fcbc98cf3ad700fd86ff7fe5">   17</a></span>&#160;        <span class="keyword">public</span> Vector2[] <a class="code" href="struct_sensoric_framework_1_1_tactile_struct.html#a012bc469fcbc98cf3ad700fd86ff7fe5">positions</a>;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;    }</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
+<a href="_tactile_struct_8cs.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="keyword">using</span> System.Collections.Generic;</div>
+<div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="keyword">using</span> UnityEngine;</div>
+<div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160; </div>
+<div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespace_sensoric_framework.html">SensoricFramework</a></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;{</div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;    [System.Serializable]</div>
+<div class="line"><a name="l00011"></a><span class="lineno"><a class="line" href="struct_sensoric_framework_1_1_tactile_struct.html">   11</a></span>&#160;    <span class="keyword">public</span> <span class="keyword">struct </span><a class="code" href="struct_sensoric_framework_1_1_tactile_struct.html">TactileStruct</a></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    {</div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;        [SerializeField]</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="struct_sensoric_framework_1_1_tactile_struct.html#a8afa31b9f34e557925cb9055a31462ca">   18</a></span>&#160;        <span class="keyword">public</span> List&lt;Vector2&gt; <a class="code" href="struct_sensoric_framework_1_1_tactile_struct.html#a8afa31b9f34e557925cb9055a31462ca">positions</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    }</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
 <div class="ttc" id="anamespace_sensoric_framework_html"><div class="ttname"><a href="namespace_sensoric_framework.html">SensoricFramework</a></div><div class="ttdef"><b>Definition:</b> <a href="_b_haptics_device_8cs_source.html#l00006">BHapticsDevice.cs:7</a></div></div>
-<div class="ttc" id="astruct_sensoric_framework_1_1_tactile_struct_html"><div class="ttname"><a href="struct_sensoric_framework_1_1_tactile_struct.html">SensoricFramework.TactileStruct</a></div><div class="ttdoc">[Serializable] Holds all tactile information</div><div class="ttdef"><b>Definition:</b> <a href="_tactile_struct_8cs_source.html#l00010">TactileStruct.cs:11</a></div></div>
-<div class="ttc" id="astruct_sensoric_framework_1_1_tactile_struct_html_a012bc469fcbc98cf3ad700fd86ff7fe5"><div class="ttname"><a href="struct_sensoric_framework_1_1_tactile_struct.html#a012bc469fcbc98cf3ad700fd86ff7fe5">SensoricFramework.TactileStruct.positions</a></div><div class="ttdeci">Vector2[] positions</div><div class="ttdoc">[SerializeField] defines the tactile positions on the hardware normalized between (0,...</div><div class="ttdef"><b>Definition:</b> <a href="_tactile_struct_8cs_source.html#l00017">TactileStruct.cs:17</a></div></div>
+<div class="ttc" id="astruct_sensoric_framework_1_1_tactile_struct_html"><div class="ttname"><a href="struct_sensoric_framework_1_1_tactile_struct.html">SensoricFramework.TactileStruct</a></div><div class="ttdoc">[Serializable] Holds all tactile information</div><div class="ttdef"><b>Definition:</b> <a href="_tactile_struct_8cs_source.html#l00011">TactileStruct.cs:12</a></div></div>
+<div class="ttc" id="astruct_sensoric_framework_1_1_tactile_struct_html_a8afa31b9f34e557925cb9055a31462ca"><div class="ttname"><a href="struct_sensoric_framework_1_1_tactile_struct.html#a8afa31b9f34e557925cb9055a31462ca">SensoricFramework.TactileStruct.positions</a></div><div class="ttdeci">List&lt; Vector2 &gt; positions</div><div class="ttdoc">[SerializeField] defines the tactile positions on the hardware normalized between (0,...</div><div class="ttdef"><b>Definition:</b> <a href="_tactile_struct_8cs_source.html#l00018">TactileStruct.cs:18</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
