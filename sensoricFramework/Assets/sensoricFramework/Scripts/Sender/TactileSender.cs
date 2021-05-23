@@ -49,8 +49,7 @@ namespace SensoricFramework
         // thanks to Andreas P. Arcaro (http://apa-games.com/)
         protected void AddCollisionPoint(Vector3 collisionPoint, Collider other)
         {
-            return; //todo: finisch implementaion
-            /*
+            //return; //todo: finisch implementaion
             if (!addCollisionPoint) return;
             if (collisionPoint == invalidVector3) return;
             if (other is BoxCollider boxCollider)
@@ -104,10 +103,8 @@ namespace SensoricFramework
             {
                 Debug.LogWarning("addCollisionPoint only works when receiver has a BoxCollider");
             }
-            */
         }
 
-        /*
         private Vector3 gizmosCore;
         private Vector3[] gizmosVetices = new Vector3[8];
 
@@ -120,6 +117,5 @@ namespace SensoricFramework
                 Gizmos.DrawLine(gizmosCore, gizmosVetices[i]);
             }
         }
-        */
     }
 }
