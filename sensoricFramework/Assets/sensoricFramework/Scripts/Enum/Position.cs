@@ -20,5 +20,6 @@ namespace SensoricFramework
         RightFoot,
         ChestFront,
         ChestBack,
+        Waist
     }
 }
