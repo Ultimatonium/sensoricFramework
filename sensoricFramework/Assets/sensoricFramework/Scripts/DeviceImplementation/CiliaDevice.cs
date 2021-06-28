@@ -30,6 +30,11 @@ namespace SensoricFramework
 
         private const string ciliaTag = "Cilia";
 
+        public delegate bool TagExist(string tag);
+        [HideInInspector]
+        public static TagExist OnTagExist;
+
+
         /// <summary>
         /// Unity-Message
         /// Validates if <see cref="defaultLightColor"/> still has the size of <see cref="ciliaSlots"/> as it's an <c>[SerializeField]</c> and could be changed in inspector.
@@ -44,6 +49,7 @@ namespace SensoricFramework
             }
 
             //validate Clilia tag
+            /*
             bool ciliaTagFound = false;
             UnityEngine.Object tagManager = AssetDatabase.LoadMainAssetAtPath("ProjectSettings/TagManager.asset");
             SerializedObject serializedTagManager = new SerializedObject(tagManager);
@@ -55,7 +61,10 @@ namespace SensoricFramework
                     ciliaTagFound = true;
                 }
             }
-            if (!ciliaTagFound)
+            */
+            //if (!TagManager.TagExist(ciliaTag))
+            //if (ciliaTagFound)
+            if (OnTagExist != null && !OnTagExist(ciliaTag))
             {
                 Debug.LogError("missing tag: " + ciliaTag);
             }
