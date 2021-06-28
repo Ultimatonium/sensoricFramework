@@ -28,12 +28,22 @@ namespace SensoricFramework
         /// </summary>
         public const int ciliaSlots = 6;
 
+        /// <summary>
+        /// Name of the Cilia Tag
+        /// </summary>
         private const string ciliaTag = "Cilia";
 
+        /// <summary>
+        /// delegate for TagManager.TagExist
+        /// </summary>
+        /// <seealso cref="TagManager"/>
         public delegate bool TagExist(string tag);
-        [HideInInspector]
-        public static TagExist OnTagExist;
 
+        /// <summary>
+        /// get set by TagManager.Init
+        /// </summary>
+        /// <seealso cref="TagManager"/>
+        public static TagExist OnTagExist;
 
         /// <summary>
         /// Unity-Message
@@ -49,21 +59,6 @@ namespace SensoricFramework
             }
 
             //validate Clilia tag
-            /*
-            bool ciliaTagFound = false;
-            UnityEngine.Object tagManager = AssetDatabase.LoadMainAssetAtPath("ProjectSettings/TagManager.asset");
-            SerializedObject serializedTagManager = new SerializedObject(tagManager);
-            SerializedProperty serializedProperty = serializedTagManager.FindProperty("tags");
-            for (int i = 0; i < serializedProperty.arraySize; i++)
-            {
-                if (serializedProperty.GetArrayElementAtIndex(i).stringValue == ciliaTag)
-                {
-                    ciliaTagFound = true;
-                }
-            }
-            */
-            //if (!TagManager.TagExist(ciliaTag))
-            //if (ciliaTagFound)
             if (OnTagExist != null && !OnTagExist(ciliaTag))
             {
                 Debug.LogError("missing tag: " + ciliaTag);
