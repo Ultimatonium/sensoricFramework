@@ -5,6 +5,21 @@ This Framework uses a sender-receiver pattern to trigger a sensoric event.
 Drag and drop [sensoricFramework.unitypackage](/sensoricFramework.unitypackage) into your Unity Project.
 An example can be found here: [vrTest_sensoricFramework](https://github.com/Ultimatonium/vrTest_sensoricFramework)
 
+## Step-by-step
+1. Download [sensoricFramework.unitypackage](/sensoricFramework.unitypackage)
+2. Import (Drag & Drop) the downloaded package into your project
+3. Assign SensoricManager once to any GameObject
+4. Assign all these [DeviceImplementation](sensoricFramework/sensoricFramework/Assets/sensoricFramework/Scripts/DeviceImplementation/) once to any GameObject your project should support
+5. Assign SensoricReceiver to all GameObject which should trigger an Sensoric event. For a VR Game it's usually the Hands and/or Head.
+6. Assign SensoricSender to all GameObject which should emmit and sensoric event when collided with a SensoricReceiver.
+    1. TactileSender could be used for a bullet 
+    2. ThermalSender could be used for a fire
+    3. OlfactorySender could be used for a flower
+    4. BHapticsSender can be used if you want use bHaptic [HapticPatterns](https://designer.bhaptics.com/). Only works for [bHaptics Devices](https://www.bhaptics.com/)
+    5. CiliaSender can be used if you want control in addition to the smell also the collor of the lights of an [Cilia](https://hapticsol.com/cilia)
+7. Done
+
+## Rough overview
 ### SensoricManager
 Singleton Object which handles the whole communication between a trigger and the hardware.
 Has to be attached to any GameObject (only once).
