@@ -12,13 +12,13 @@ namespace SensoricFramework
         /// body part
         /// </summary>
         [SerializeField]
-        public PositionEnum position;
+        public Position position;
         /// <summary>
         /// <c>[SerializeField]</c>
-        /// sensoric type: <see cref="SensoricEnum"/>
+        /// sensoric type: <see cref="Sensoric"/>
         /// </summary>
         [SerializeField]
-        public SensoricEnum[] sensorics = new SensoricEnum[] { SensoricEnum.tactile, SensoricEnum.thermal, SensoricEnum.olfactory };
+        public Sensoric[] sensorics = new Sensoric[] { Sensoric.tactile, Sensoric.thermal, Sensoric.olfactory };
 
         /// <summary>
         /// Unity-Message

@@ -40,7 +40,7 @@ namespace SensoricFramework
         /// </summary>
         /// <param name="position">defines which body party got hit</param>
         /// <param name="collisionPoint"><see cref="Vector3"/>not used</param>
-        protected override void Play(PositionEnum position, Vector3 collisionPoint, Collider other)
+        protected override void Play(Position position, Vector3 collisionPoint, Collider other)
         {
             SensoricManager.Instance.OnPlayOlfactory(this, new CiliaEventArgs { position = position, sensoric = sensoricStruct, olfactory = olfactoryStruct, light = light, setLight = setLight });
         }

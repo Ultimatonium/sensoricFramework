@@ -6,7 +6,7 @@ namespace SensoricFramework
     /// and <see cref="PositionType"/>
     /// based on personal opinion
     /// </summary>
-    public enum PositionEnum
+    public enum Position
     {
         NONE,
         Head,

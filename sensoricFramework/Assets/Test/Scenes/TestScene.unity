@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 303655315}
   - component: {fileID: 303655314}
   m_Layer: 0
-  m_Name: test
+  m_Name: TestSender
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -951,7 +951,7 @@ GameObject:
   - component: {fileID: 595772194}
   - component: {fileID: 595772200}
   m_Layer: 0
-  m_Name: DistanceTest
+  m_Name: ModifierTest
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1445,7 +1445,7 @@ GameObject:
   - component: {fileID: 1209090537}
   - component: {fileID: 1209090535}
   m_Layer: 0
-  m_Name: sensoricFramework
+  m_Name: SensoricFramework
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
