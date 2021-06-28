@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['thermalenum_1811',['ThermalEnum',['../namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2',1,'SensoricFramework']]]
+  ['thermal_1822',['Thermal',['../namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848',1,'SensoricFramework']]]
 ];

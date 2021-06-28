@@ -131,6 +131,7 @@ namespace SensoricFramework
         /// </summary>
         /// <param name="gameObject"><see cref="GameObject"/> of the other collider</param>
         /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
+        /// <param name="other">the collider of the other gameObject</param>
         protected void CollisionHandler(GameObject gameObject, Vector3 collisionPoint, Collider other)
         {
             SensoricReceiver[] sensoricReceivers = gameObject.GetComponentsInChildren<SensoricReceiver>();
@@ -157,6 +158,7 @@ namespace SensoricFramework
         /// </summary>
         /// <param name="position">defines which body party got hit</param>
         /// <param name="collisionPoint"><see cref="Vector3"/> worldspace position where the Collider got hit</param>
+        /// <param name="other">the collider of the other gameObject</param>
         protected abstract void Play(Position position, Vector3 collisionPoint, Collider other);
 
         /// <summary>

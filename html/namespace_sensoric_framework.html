@@ -80,6 +80,9 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_sensoric_device.html">SensoricDevice</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Abstract class from which every plugin implementation has to be derived from  <a href="class_sensoric_framework_1_1_sensoric_device.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_tag_manager.html">TagManager</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Contains methods to interact with the <a class="el" href="class_sensoric_framework_1_1_tag_manager.html" title="Contains methods to interact with the TagManagerUses UnityEditor functionality">TagManager</a>Uses UnityEditor functionality  <a href="class_sensoric_framework_1_1_tag_manager.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_b_haptics_event_args.html">BHapticsEventArgs</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Derived from <a class="el" href="class_sensoric_framework_1_1_play_tactile_event_args.html" title="Holds all information which is needed to emitt an tactile sense">PlayTactileEventArgs</a> with an additional variable for an bHaptic Clip  <a href="class_sensoric_framework_1_1_b_haptics_event_args.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,74 +131,76 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_sensoric_framework_1_1_sensoric_receiver.html">SensoricReceiver</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">defines human body position which can receive an sensoric event  <a href="class_sensoric_framework_1_1_sensoric_receiver.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_olfactory_struct.html">OlfactoryStruct</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all olfactory information  <a href="struct_sensoric_framework_1_1_olfactory_struct.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_olfactory_data.html">OlfactoryData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all olfactory information  <a href="struct_sensoric_framework_1_1_olfactory_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_sensoric_struct.html">SensoricStruct</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all general sensoric information  <a href="struct_sensoric_framework_1_1_sensoric_struct.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_sensoric_data.html">SensoricData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all general sensoric information  <a href="struct_sensoric_framework_1_1_sensoric_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_tactile_struct.html">TactileStruct</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all tactile information  <a href="struct_sensoric_framework_1_1_tactile_struct.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_tactile_data.html">TactileData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all tactile information  <a href="struct_sensoric_framework_1_1_tactile_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_thermal_struct.html">ThermalStruct</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all tactile information  <a href="struct_sensoric_framework_1_1_thermal_struct.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_sensoric_framework_1_1_thermal_data.html">ThermalData</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight"><code>[Serializable]</code> Holds all tactile information  <a href="struct_sensoric_framework_1_1_thermal_data.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="enum-members"></a>
 Enumerations</h2></td></tr>
-<tr class="memitem:a8c22de30d7e2146102291ddc65bb9905"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905">ExecutionAmountEnum</a> { <a class="el" href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905ab50339a10e1de285ac99d4c3990b8693">NONE</a>
-, <a class="el" href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905ae1a9dc9f23534e63de9df0d540ac1611">Once</a>
-, <a class="el" href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905a7ee7defde6dc3a1d4a4a891b3894e790">Ongoing</a>
+<tr class="memitem:aa31f29ae77516c2d261c1cbba2a94a75"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75">ExecutionAmount</a> { <a class="el" href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75ae1a9dc9f23534e63de9df0d540ac1611">Once</a>
+, <a class="el" href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75a7ee7defde6dc3a1d4a4a891b3894e790">Ongoing</a>
  }</td></tr>
-<tr class="memdesc:a8c22de30d7e2146102291ddc65bb9905"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum which defines how often something happens  <a href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905">More...</a><br /></td></tr>
-<tr class="separator:a8c22de30d7e2146102291ddc65bb9905"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a46b3c1c065c94c41199b818a879d8806"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806">PositionEnum</a> { <br />
-&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806ab50339a10e1de285ac99d4c3990b8693">NONE</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a98921133d10fbdb0fb6dbb7b2648befe">Head</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a11a0e70abba408b0f5b9b8029378d8c9">LeftArm</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a1400f967bd4e30a0d9210ce70b687339">RightArm</a>
+<tr class="memdesc:aa31f29ae77516c2d261c1cbba2a94a75"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum which defines how often something happens  <a href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75">More...</a><br /></td></tr>
+<tr class="separator:aa31f29ae77516c2d261c1cbba2a94a75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd22c38bfb80b967307f8ac059e68fbb"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbb">Position</a> { <br />
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbbab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba98921133d10fbdb0fb6dbb7b2648befe">Head</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba11a0e70abba408b0f5b9b8029378d8c9">LeftArm</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba1400f967bd4e30a0d9210ce70b687339">RightArm</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a03f7bbbc02c9006ea393ec4ef5843d7b">LeftHand</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806aa51983e0f69f76a68e55efe2e7b700b5">RightHand</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a6a5573301e48f5e38c0deca18e8cb057">LeftLeg</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a6847817d2778bdfb285cb6c4a195d3c9">RightLeg</a>
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba03f7bbbc02c9006ea393ec4ef5843d7b">LeftHand</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbbaa51983e0f69f76a68e55efe2e7b700b5">RightHand</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba6a5573301e48f5e38c0deca18e8cb057">LeftLeg</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba6847817d2778bdfb285cb6c4a195d3c9">RightLeg</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806ae81960506fa9c17a1fa39c529ae1bf50">LeftFoot</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806ac901c64cc70540fbd6d7f6c71b047a6a">RightFoot</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a160a79c77b5db8dbc4a1406e517db7f2">ChestFront</a>
-, <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806a5675a03d5612376bdc58c3a891475db2">ChestBack</a>
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbbae81960506fa9c17a1fa39c529ae1bf50">LeftFoot</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbbac901c64cc70540fbd6d7f6c71b047a6a">RightFoot</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba160a79c77b5db8dbc4a1406e517db7f2">ChestFront</a>
+, <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbba5675a03d5612376bdc58c3a891475db2">ChestBack</a>
+, <br />
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbbad96414f5cfbd621bb6368bb260d5240c">Waist</a>
 <br />
  }</td></tr>
-<tr class="memdesc:a46b3c1c065c94c41199b818a879d8806"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available body positions Merge of <a href="https://docs.unity3d.com/Manual/class-AvatarMask.html">https://docs.unity3d.com/Manual/class-AvatarMask.html</a> and PositionType based on personal opinion  <a href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806">More...</a><br /></td></tr>
-<tr class="separator:a46b3c1c065c94c41199b818a879d8806"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3d60bc6ef6a0672f7961920eee9af8e5"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5">SensoricEnum</a> { <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5ab50339a10e1de285ac99d4c3990b8693">NONE</a>
-, <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5a1feb589757b635e90f25be51ad0f0297">tactile</a>
-, <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5a26a27f04d02b653b4b5b77b5d11d7bb9">thermal</a>
-, <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5a3587c102d1a2a0540234fd0ee8081639">olfactory</a>
+<tr class="memdesc:abd22c38bfb80b967307f8ac059e68fbb"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available body positions Merge of <a href="https://docs.unity3d.com/Manual/class-AvatarMask.html">https://docs.unity3d.com/Manual/class-AvatarMask.html</a> and PositionType based on personal opinion  <a href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbb">More...</a><br /></td></tr>
+<tr class="separator:abd22c38bfb80b967307f8ac059e68fbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5336b84d57828586bcb008e9d69b151"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151">Sensoric</a> { <a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151a1feb589757b635e90f25be51ad0f0297">tactile</a>
+, <a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151a26a27f04d02b653b4b5b77b5d11d7bb9">thermal</a>
+, <a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151a3587c102d1a2a0540234fd0ee8081639">olfactory</a>
  }</td></tr>
-<tr class="memdesc:a3d60bc6ef6a0672f7961920eee9af8e5"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available sensoric types  <a href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5">More...</a><br /></td></tr>
-<tr class="separator:a3d60bc6ef6a0672f7961920eee9af8e5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae80ed93bd82bdc0d6cc1ffd029fded0e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0e">SmellEnum</a> { <br />
-&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0ea9f6290f4436e5a2351f12e03b6433c3c">Apple</a>
-, <a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0eabdf7ad23e89b55f904bca0304819309e">Leather</a>
-, <a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0ea6e4dd7ce4ea3c1d4a90edb289e22da98">Wood</a>
-, <a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0ea0df4dccc4aac3f6f36e00ef2a6a4bfac">Rose</a>
+<tr class="memdesc:af5336b84d57828586bcb008e9d69b151"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available sensoric types  <a href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151">More...</a><br /></td></tr>
+<tr class="separator:af5336b84d57828586bcb008e9d69b151"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a03441adeb4e07eccd8596fa6c7a11366"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366">Smell</a> { <br />
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366a9f6290f4436e5a2351f12e03b6433c3c">Apple</a>
+, <a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366abdf7ad23e89b55f904bca0304819309e">Leather</a>
+, <a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366a6e4dd7ce4ea3c1d4a90edb289e22da98">Wood</a>
+, <a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366a0df4dccc4aac3f6f36e00ef2a6a4bfac">Rose</a>
 , <br />
-&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0ea9f04933b3c9c319d8b5941e3175ac77f">Gunpowder</a>
+&#160;&#160;<a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366a9f04933b3c9c319d8b5941e3175ac77f">Gunpowder</a>
 <br />
  }</td></tr>
-<tr class="memdesc:ae80ed93bd82bdc0d6cc1ffd029fded0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">automaticly generated by SensoricManager  <a href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0e">More...</a><br /></td></tr>
-<tr class="separator:ae80ed93bd82bdc0d6cc1ffd029fded0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae83cbc54371ac6cf9b542b405568a0d2"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2">ThermalEnum</a> { <a class="el" href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2ab50339a10e1de285ac99d4c3990b8693">NONE</a>
-, <a class="el" href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2a75e52a0ecfafeda17a34fc60111c1f0b">cold</a>
-, <a class="el" href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2a27369b3bf4483e8dcfd85ba9a39a947f">hot</a>
+<tr class="memdesc:a03441adeb4e07eccd8596fa6c7a11366"><td class="mdescLeft">&#160;</td><td class="mdescRight">automaticly generated by SensoricManager  <a href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366">More...</a><br /></td></tr>
+<tr class="separator:a03441adeb4e07eccd8596fa6c7a11366"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6496bdd8f4028d820a8c96f02d13c848"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848">Thermal</a> { <a class="el" href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848ab50339a10e1de285ac99d4c3990b8693">NONE</a>
+, <a class="el" href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848a75e52a0ecfafeda17a34fc60111c1f0b">cold</a>
+, <a class="el" href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848a27369b3bf4483e8dcfd85ba9a39a947f">hot</a>
  }</td></tr>
-<tr class="memdesc:ae83cbc54371ac6cf9b542b405568a0d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available thermal types  <a href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2">More...</a><br /></td></tr>
-<tr class="separator:ae83cbc54371ac6cf9b542b405568a0d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:a6496bdd8f4028d820a8c96f02d13c848"><td class="mdescLeft">&#160;</td><td class="mdescRight">enum for available thermal types  <a href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848">More...</a><br /></td></tr>
+<tr class="separator:a6496bdd8f4028d820a8c96f02d13c848"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Enumeration Type Documentation</h2>
-<a id="a8c22de30d7e2146102291ddc65bb9905"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8c22de30d7e2146102291ddc65bb9905">&#9670;&nbsp;</a></span>ExecutionAmountEnum</h2>
+<a id="aa31f29ae77516c2d261c1cbba2a94a75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa31f29ae77516c2d261c1cbba2a94a75">&#9670;&nbsp;</a></span>ExecutionAmount</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -204,7 +209,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905">SensoricFramework.ExecutionAmountEnum</a></td>
+          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75">SensoricFramework.ExecutionAmount</a></td>
         </tr>
       </table>
   </td>
@@ -216,17 +221,17 @@ Enumerations</h2></td></tr>
 
 <p>enum which defines how often something happens </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a8c22de30d7e2146102291ddc65bb9905ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8c22de30d7e2146102291ddc65bb9905ae1a9dc9f23534e63de9df0d540ac1611"></a>Once&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a8c22de30d7e2146102291ddc65bb9905a7ee7defde6dc3a1d4a4a891b3894e790"></a>Ongoing&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="aa31f29ae77516c2d261c1cbba2a94a75ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa31f29ae77516c2d261c1cbba2a94a75ae1a9dc9f23534e63de9df0d540ac1611"></a>Once&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="aa31f29ae77516c2d261c1cbba2a94a75a7ee7defde6dc3a1d4a4a891b3894e790"></a>Ongoing&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_execution_amount_enum_8cs_source.html#l00006">6</a> of file <a class="el" href="_execution_amount_enum_8cs_source.html">ExecutionAmountEnum.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_execution_amount_8cs_source.html#l00006">6</a> of file <a class="el" href="_execution_amount_8cs_source.html">ExecutionAmount.cs</a>.</p>
 
 </div>
 </div>
-<a id="a46b3c1c065c94c41199b818a879d8806"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a46b3c1c065c94c41199b818a879d8806">&#9670;&nbsp;</a></span>PositionEnum</h2>
+<a id="abd22c38bfb80b967307f8ac059e68fbb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd22c38bfb80b967307f8ac059e68fbb">&#9670;&nbsp;</a></span>Position</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -235,7 +240,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#a46b3c1c065c94c41199b818a879d8806">SensoricFramework.PositionEnum</a></td>
+          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#abd22c38bfb80b967307f8ac059e68fbb">SensoricFramework.Position</a></td>
         </tr>
       </table>
   </td>
@@ -247,26 +252,27 @@ Enumerations</h2></td></tr>
 
 <p>enum for available body positions Merge of <a href="https://docs.unity3d.com/Manual/class-AvatarMask.html">https://docs.unity3d.com/Manual/class-AvatarMask.html</a> and PositionType based on personal opinion </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a98921133d10fbdb0fb6dbb7b2648befe"></a>Head&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a11a0e70abba408b0f5b9b8029378d8c9"></a>LeftArm&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a1400f967bd4e30a0d9210ce70b687339"></a>RightArm&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a03f7bbbc02c9006ea393ec4ef5843d7b"></a>LeftHand&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806aa51983e0f69f76a68e55efe2e7b700b5"></a>RightHand&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a6a5573301e48f5e38c0deca18e8cb057"></a>LeftLeg&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a6847817d2778bdfb285cb6c4a195d3c9"></a>RightLeg&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806ae81960506fa9c17a1fa39c529ae1bf50"></a>LeftFoot&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806ac901c64cc70540fbd6d7f6c71b047a6a"></a>RightFoot&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a160a79c77b5db8dbc4a1406e517db7f2"></a>ChestFront&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a46b3c1c065c94c41199b818a879d8806a5675a03d5612376bdc58c3a891475db2"></a>ChestBack&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbbab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba98921133d10fbdb0fb6dbb7b2648befe"></a>Head&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba11a0e70abba408b0f5b9b8029378d8c9"></a>LeftArm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba1400f967bd4e30a0d9210ce70b687339"></a>RightArm&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba03f7bbbc02c9006ea393ec4ef5843d7b"></a>LeftHand&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbbaa51983e0f69f76a68e55efe2e7b700b5"></a>RightHand&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba6a5573301e48f5e38c0deca18e8cb057"></a>LeftLeg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba6847817d2778bdfb285cb6c4a195d3c9"></a>RightLeg&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbbae81960506fa9c17a1fa39c529ae1bf50"></a>LeftFoot&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbbac901c64cc70540fbd6d7f6c71b047a6a"></a>RightFoot&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba160a79c77b5db8dbc4a1406e517db7f2"></a>ChestFront&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbba5675a03d5612376bdc58c3a891475db2"></a>ChestBack&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="abd22c38bfb80b967307f8ac059e68fbbad96414f5cfbd621bb6368bb260d5240c"></a>Waist&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_position_enum_8cs_source.html#l00009">9</a> of file <a class="el" href="_position_enum_8cs_source.html">PositionEnum.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_position_8cs_source.html#l00009">9</a> of file <a class="el" href="_position_8cs_source.html">Position.cs</a>.</p>
 
 </div>
 </div>
-<a id="a3d60bc6ef6a0672f7961920eee9af8e5"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3d60bc6ef6a0672f7961920eee9af8e5">&#9670;&nbsp;</a></span>SensoricEnum</h2>
+<a id="af5336b84d57828586bcb008e9d69b151"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af5336b84d57828586bcb008e9d69b151">&#9670;&nbsp;</a></span>Sensoric</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -275,7 +281,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#a3d60bc6ef6a0672f7961920eee9af8e5">SensoricFramework.SensoricEnum</a></td>
+          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151">SensoricFramework.Sensoric</a></td>
         </tr>
       </table>
   </td>
@@ -287,18 +293,18 @@ Enumerations</h2></td></tr>
 
 <p>enum for available sensoric types </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a3d60bc6ef6a0672f7961920eee9af8e5ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3d60bc6ef6a0672f7961920eee9af8e5a1feb589757b635e90f25be51ad0f0297"></a>tactile&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3d60bc6ef6a0672f7961920eee9af8e5a26a27f04d02b653b4b5b77b5d11d7bb9"></a>thermal&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a3d60bc6ef6a0672f7961920eee9af8e5a3587c102d1a2a0540234fd0ee8081639"></a>olfactory&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="af5336b84d57828586bcb008e9d69b151ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af5336b84d57828586bcb008e9d69b151a1feb589757b635e90f25be51ad0f0297"></a>tactile&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af5336b84d57828586bcb008e9d69b151a26a27f04d02b653b4b5b77b5d11d7bb9"></a>thermal&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="af5336b84d57828586bcb008e9d69b151a3587c102d1a2a0540234fd0ee8081639"></a>olfactory&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_sensoric_enum_8cs_source.html#l00006">6</a> of file <a class="el" href="_sensoric_enum_8cs_source.html">SensoricEnum.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_sensoric_8cs_source.html#l00006">6</a> of file <a class="el" href="_sensoric_8cs_source.html">Sensoric.cs</a>.</p>
 
 </div>
 </div>
-<a id="ae80ed93bd82bdc0d6cc1ffd029fded0e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae80ed93bd82bdc0d6cc1ffd029fded0e">&#9670;&nbsp;</a></span>SmellEnum</h2>
+<a id="a03441adeb4e07eccd8596fa6c7a11366"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a03441adeb4e07eccd8596fa6c7a11366">&#9670;&nbsp;</a></span>Smell</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -307,7 +313,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#ae80ed93bd82bdc0d6cc1ffd029fded0e">SensoricFramework.SmellEnum</a></td>
+          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#a03441adeb4e07eccd8596fa6c7a11366">SensoricFramework.Smell</a></td>
         </tr>
       </table>
   </td>
@@ -319,19 +325,19 @@ Enumerations</h2></td></tr>
 
 <p>automaticly generated by <a class="el" href="class_sensoric_framework_1_1_sensoric_manager.html" title="Core script of the SensoricFramework. Mandatory if framework want to be used. Can only exist once (Si...">SensoricManager</a> </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae80ed93bd82bdc0d6cc1ffd029fded0ea9f6290f4436e5a2351f12e03b6433c3c"></a>Apple&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae80ed93bd82bdc0d6cc1ffd029fded0eabdf7ad23e89b55f904bca0304819309e"></a>Leather&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae80ed93bd82bdc0d6cc1ffd029fded0ea6e4dd7ce4ea3c1d4a90edb289e22da98"></a>Wood&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae80ed93bd82bdc0d6cc1ffd029fded0ea0df4dccc4aac3f6f36e00ef2a6a4bfac"></a>Rose&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae80ed93bd82bdc0d6cc1ffd029fded0ea9f04933b3c9c319d8b5941e3175ac77f"></a>Gunpowder&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a03441adeb4e07eccd8596fa6c7a11366a9f6290f4436e5a2351f12e03b6433c3c"></a>Apple&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a03441adeb4e07eccd8596fa6c7a11366abdf7ad23e89b55f904bca0304819309e"></a>Leather&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a03441adeb4e07eccd8596fa6c7a11366a6e4dd7ce4ea3c1d4a90edb289e22da98"></a>Wood&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a03441adeb4e07eccd8596fa6c7a11366a0df4dccc4aac3f6f36e00ef2a6a4bfac"></a>Rose&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a03441adeb4e07eccd8596fa6c7a11366a9f04933b3c9c319d8b5941e3175ac77f"></a>Gunpowder&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_smell_enum_8cs_source.html#l00003">3</a> of file <a class="el" href="_smell_enum_8cs_source.html">SmellEnum.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_smell_8cs_source.html#l00003">3</a> of file <a class="el" href="_smell_8cs_source.html">Smell.cs</a>.</p>
 
 </div>
 </div>
-<a id="ae83cbc54371ac6cf9b542b405568a0d2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae83cbc54371ac6cf9b542b405568a0d2">&#9670;&nbsp;</a></span>ThermalEnum</h2>
+<a id="a6496bdd8f4028d820a8c96f02d13c848"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6496bdd8f4028d820a8c96f02d13c848">&#9670;&nbsp;</a></span>Thermal</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -340,7 +346,7 @@ Enumerations</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#ae83cbc54371ac6cf9b542b405568a0d2">SensoricFramework.ThermalEnum</a></td>
+          <td class="memname">enum <a class="el" href="namespace_sensoric_framework.html#a6496bdd8f4028d820a8c96f02d13c848">SensoricFramework.Thermal</a></td>
         </tr>
       </table>
   </td>
@@ -352,12 +358,12 @@ Enumerations</h2></td></tr>
 
 <p>enum for available thermal types </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae83cbc54371ac6cf9b542b405568a0d2ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae83cbc54371ac6cf9b542b405568a0d2a75e52a0ecfafeda17a34fc60111c1f0b"></a>cold&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ae83cbc54371ac6cf9b542b405568a0d2a27369b3bf4483e8dcfd85ba9a39a947f"></a>hot&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a6496bdd8f4028d820a8c96f02d13c848ab50339a10e1de285ac99d4c3990b8693"></a>NONE&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6496bdd8f4028d820a8c96f02d13c848a75e52a0ecfafeda17a34fc60111c1f0b"></a>cold&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a6496bdd8f4028d820a8c96f02d13c848a27369b3bf4483e8dcfd85ba9a39a947f"></a>hot&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
-<p class="definition">Definition at line <a class="el" href="_thermal_enum_8cs_source.html#l00006">6</a> of file <a class="el" href="_thermal_enum_8cs_source.html">ThermalEnum.cs</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_thermal_8cs_source.html#l00006">6</a> of file <a class="el" href="_thermal_8cs_source.html">Thermal.cs</a>.</p>
 
 </div>
 </div>

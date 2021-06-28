@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['executionamountenum_1800',['ExecutionAmountEnum',['../namespace_sensoric_framework.html#a8c22de30d7e2146102291ddc65bb9905',1,'SensoricFramework']]]
+  ['executionamount_1811',['ExecutionAmount',['../namespace_sensoric_framework.html#aa31f29ae77516c2d261c1cbba2a94a75',1,'SensoricFramework']]]
 ];

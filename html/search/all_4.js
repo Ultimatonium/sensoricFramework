@@ -32,8 +32,7 @@ var searchData=
   ['dotpointlist_242',['dotPointList',['../class_bhaptics_dot_point_controller_example.html#afb99a7fada30884b213c403c0d9f05f7',1,'BhapticsDotPointControllerExample']]],
   ['dotpoints_243',['DotPoints',['../class_bhaptics_1_1_tact_1_1_unity_1_1_simple_haptic_clip.html#aa1515f262d271b87db68b917aee59223',1,'Bhaptics::Tact::Unity::SimpleHapticClip']]],
   ['dotpointui_244',['DotPointUi',['../class_simple_haptic_clip_editor.html#aa3b23d19b28a46b35da5258b0a16fae3',1,'SimpleHapticClipEditor']]],
-  ['duration_245',['duration',['../struct_sensoric_framework_1_1_sensoric_struct.html#a541e1ffd339e5c066fce34e89387b8a4',1,'SensoricFramework::SensoricStruct']]],
+  ['duration_245',['duration',['../class_bhaptics_dot_point_controller_example.html#aa00149490d3eaa31a4398525eee4df09',1,'BhapticsDotPointControllerExample.duration()'],['../struct_sensoric_framework_1_1_sensoric_data.html#a382fa6f02a5b9115d3795d2664e1c23f',1,'SensoricFramework.SensoricData.duration()']]],
   ['duration_246',['Duration',['../class_bhaptics_1_1_tact_1_1_unity_1_1_file_haptic_clip.html#a92df3e7904e825bb9d4de2f250910c8c',1,'Bhaptics::Tact::Unity::FileHapticClip']]],
-  ['duration_247',['duration',['../class_bhaptics_dot_point_controller_example.html#aa00149490d3eaa31a4398525eee4df09',1,'BhapticsDotPointControllerExample']]],
-  ['durationslider_248',['durationSlider',['../class_bhaptics_test_script.html#a36a0db0e284443db40b1251f3e37e285',1,'BhapticsTestScript']]]
+  ['durationslider_247',['durationSlider',['../class_bhaptics_test_script.html#a36a0db0e284443db40b1251f3e37e285',1,'BhapticsTestScript']]]
 ];
