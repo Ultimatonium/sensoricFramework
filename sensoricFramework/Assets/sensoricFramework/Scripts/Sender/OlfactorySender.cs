@@ -27,10 +27,10 @@ namespace SensoricFramework
         /// <summary>
         /// set type of sensoric
         /// </summary>
-        /// <returns><see cref="Sensoric"/></returns>
-        protected override Sensoric SetSensoricType()
+        /// <returns><see cref="SensoricType"/></returns>
+        protected override SensoricType SetSensoricType()
         {
-            return Sensoric.olfactory;
+            return SensoricType.olfactory;
         }
     }
 }

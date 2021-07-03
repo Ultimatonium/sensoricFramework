@@ -7,7 +7,7 @@ var searchData=
   ['offsetyslider_516',['offsetYSlider',['../class_bhaptics_test_script.html#ad5ce6c5038df53dae7725ef64eeae7a7',1,'BhapticsTestScript']]],
   ['offsetytext_517',['offsetYText',['../class_bhaptics_rotate_example.html#a99bb197c5ad07aab3cc1db1c7a385bf2',1,'BhapticsRotateExample']]],
   ['olddistance_518',['oldDistance',['../class_cilia_fan_example2.html#a92932617558062277d29c87398bb677e',1,'CiliaFanExample2.oldDistance()'],['../class_variable_light.html#aaac9185a65cb8527399bf10d03436243',1,'VariableLight.oldDistance()']]],
-  ['olfactory_519',['olfactory',['../class_sensoric_framework_1_1_play_olfactory_event_args.html#ae318dd63046ee570a19b7b7b35cbc0a9',1,'SensoricFramework.PlayOlfactoryEventArgs.olfactory()'],['../namespace_sensoric_framework.html#af5336b84d57828586bcb008e9d69b151a3587c102d1a2a0540234fd0ee8081639',1,'SensoricFramework.olfactory()']]],
+  ['olfactory_519',['olfactory',['../class_sensoric_framework_1_1_play_olfactory_event_args.html#ae318dd63046ee570a19b7b7b35cbc0a9',1,'SensoricFramework.PlayOlfactoryEventArgs.olfactory()'],['../namespace_sensoric_framework.html#a43ac41b5373b9d14a9eb33c08954120ba3587c102d1a2a0540234fd0ee8081639',1,'SensoricFramework.olfactory()']]],
   ['olfactorydata_520',['OlfactoryData',['../struct_sensoric_framework_1_1_olfactory_data.html',1,'SensoricFramework']]],
   ['olfactorydata_2ecs_521',['OlfactoryData.cs',['../_olfactory_data_8cs.html',1,'']]],
   ['olfactorysender_522',['OlfactorySender',['../class_sensoric_framework_1_1_olfactory_sender.html',1,'SensoricFramework']]],

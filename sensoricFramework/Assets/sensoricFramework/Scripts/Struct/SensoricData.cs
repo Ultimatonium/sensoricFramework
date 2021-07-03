@@ -19,7 +19,7 @@ namespace SensoricFramework
         /// defines the sensoric type
         /// </summary>
         [HideInInspector]
-        public Sensoric sensoric;
+        public SensoricType sensoric;
         /// <summary>
         /// <c>[SerializeField]</c>
         /// defines the intensity. normalized between 0 and 1 (inclusive)

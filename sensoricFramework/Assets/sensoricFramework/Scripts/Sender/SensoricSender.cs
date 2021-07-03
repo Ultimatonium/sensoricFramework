@@ -164,8 +164,8 @@ namespace SensoricFramework
         /// <summary>
         /// has to be implemented to set the sensoric type of this sender
         /// </summary>
-        /// <returns><see cref="Sensoric"/></returns>
-        protected abstract Sensoric SetSensoricType();
+        /// <returns><see cref="SensoricType"/></returns>
+        protected abstract SensoricType SetSensoricType();
 
         /// <summary>
         /// determins the point where the trigger got hit with an raycast

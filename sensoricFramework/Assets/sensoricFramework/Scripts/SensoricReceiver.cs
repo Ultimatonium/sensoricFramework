@@ -15,10 +15,10 @@ namespace SensoricFramework
         public Position position;
         /// <summary>
         /// <c>[SerializeField]</c>
-        /// sensoric type: <see cref="Sensoric"/>
+        /// sensoric type: <see cref="SensoricType"/>
         /// </summary>
         [SerializeField]
-        public Sensoric[] sensorics = new Sensoric[] { Sensoric.tactile, Sensoric.thermal, Sensoric.olfactory };
+        public SensoricType[] sensorics = new SensoricType[] { SensoricType.tactile, SensoricType.thermal, SensoricType.olfactory };
 
         /// <summary>
         /// Unity-Message
