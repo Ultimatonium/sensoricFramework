@@ -9,7 +9,7 @@ An example can be found here: [vrTest_sensoricFramework](https://github.com/Ulti
 1. Download [sensoricFramework.unitypackage](/sensoricFramework.unitypackage)
 2. Import (Drag & Drop) the downloaded package into your project
 3. Assign SensoricManager once to any GameObject
-4. Assign all these [DeviceImplementation](sensoricFramework/sensoricFramework/Assets/sensoricFramework/Scripts/DeviceImplementation/) once to any GameObject your project should support
+4. Assign all these [DeviceImplementation](/sensoricFramework/Assets/sensoricFramework/Scripts/DeviceImplementation/) once to any GameObject your project should support
 5. Assign SensoricReceiver to all GameObject which should trigger an Sensoric event. For a VR Game it's usually the Hands and/or Head.
 6. Assign SensoricSender to all GameObject which should emmit and sensoric event when collided with a SensoricReceiver.
     1. TactileSender could be used for a bullet 
